@@ -61,6 +61,7 @@ Organizations:
         # MSPDir is the filesystem path which contains the MSP configuration
         MSPDir: crypto-config/ordererOrganizations/example.com/msp
 
+
     - &Org1
         # DefaultOrg defines the organization which is used in the sampleconfig
         # of the fabric.git development environment
@@ -111,6 +112,9 @@ Orderer: &OrdererDefaults
 
     Addresses:
         - orderer.example.com:7050
+        - orderer0.example.com:7050
+        - orderer1.example.com:7050
+
 
     # Batch Timeout: The amount of time to wait before creating a batch
     BatchTimeout: 2s
